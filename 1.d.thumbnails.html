@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Thumbnail Image Gallery</title>
+    <title>Andhra Pradesh Image Map</title>
 </head>
 <body>
 
-    <h1>Image Gallery using Thumbnails</h1>
-    <p>Click on a thumbnail to view the full-size image</p>
+    <h2>Andhra Pradesh District Map</h2>
 
-    <!-- Image Gallery -->
+    <!-- Image -->
+    <img src="andhrapradesh.png" usemap="#image-map" alt="Andhra Pradesh Map">
 
-    <a href="image1.jpg" target="_blank">
-        <img src="image1-thumb.jpg" width="100" height="100" alt="Image 1">
-    </a>
+    <!-- Image Map -->
+    <map name="image-map">
+        <area 
+            target="_self" 
+            alt="Prakasam" 
+            title="Prakasam" 
+            href="prakasam.png" 
+            coords="743,434,194" 
+            shape="circle">
 
-    <a href="image2.jpg" target="_blank">
-        <img src="image2-thumb.jpg" width="100" height="100" alt="Image 2">
-    </a>
+        <area 
+            target="_self" 
+            alt="chittore" 
+            title="chittore" 
+            href="chittore.png" 
+            coords="679,768,110" 
+            shape="circle">
+       
 </body>
 </html>
