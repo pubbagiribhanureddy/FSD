@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple CSS Selectors</title>
+  <style>
+    /* Simple selectors */
+    p { color: blue; }              /* element selector */
+    #title { color: red; }          /* id selector */
+    .note { background: yellow; }   /* class selector */
+
+    /* Group selector */
+    h2, h3 { font-style: italic; }
+
+    /* Universal selector */
+    * { font-family: Arial; }
+  </style>
+</head>
+<body>
+  <h1 id="title">Main Heading</h1>
+  <p>This is a paragraph styled by element selector.</p>
+  <p class="note">This paragraph uses a class selector.</p>
+  <h2>Grouped Selector Example</h2>
+  <h3>Another Grouped Selector Example</h3>
+</body>
+</html>
