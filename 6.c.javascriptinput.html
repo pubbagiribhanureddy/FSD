@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Input Methods</title>
+</head>
+<body>
+  <h2>Input Demonstration</h2>
+
+  <!-- Form Input -->
+  <input type="text" id="formInput" placeholder="Type something">
+  <button onclick="formInput()">Submit</button>
+  <p id="formOutput"></p>
+
+  <script>
+    // Prompt Input
+    let promptValue = prompt("Enter a number:");
+    alert("You entered: " + promptValue);
+
+    // Form Input
+    function formInput() {
+      let value = document.getElementById("formInput").value;
+      document.getElementById("formOutput").innerHTML = "Form input: " + value;
+    }
+  </script>
+</body>
+</html>

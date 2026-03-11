@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Tilted Background</title>
+    <style>
+        body {
+            margin: 0;
+            height: 200vh; /* Extra height to enable scrolling */
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 50%; /* Halfway down the page */
+            left: 50%;
+            width: 500px;
+            height: 300px;
+            background-image: url("file:///C:/Users/ramin/Downloads/mumbai.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            transform: translate(-50%, -50%) rotate(15deg); /* Tilt horizontally */
+            z-index: -1;
+        }
+
+        p {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Scrolling Page</h2>
+    <p>Scroll down to see that the image stays fixed in position.</p>
+
+</body>
+</html>
